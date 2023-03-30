@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="479.0" prefWidth="946.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kkte.ITshowController">
+   <children>
+      <TextArea fx:id="textArea" layoutX="88.0" layoutY="55.0" prefHeight="359.0" prefWidth="781.0" />
+      <Button layoutX="120.0" layoutY="14.0" mnemonicParsing="false" onAction="#buttonClick" text="Button" />
+   </children>
+</AnchorPane>

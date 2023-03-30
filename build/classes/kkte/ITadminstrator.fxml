@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="933.0" prefWidth="1228.0" style="-fx-background-color: #DFF5CE;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="kkte.ITadminstratorController">
+   <children>
+      <Label alignment="CENTER" layoutX="520.0" layoutY="97.0" prefHeight="41.0" prefWidth="188.0" text="Add New App User">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="selectUserTypeComboBox" layoutX="619.0" layoutY="185.0" prefHeight="25.0" prefWidth="178.0" promptText="Select User Type" />
+      <Label layoutX="412.0" layoutY="185.0" prefHeight="25.0" prefWidth="152.0" text="Select User Type :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="412.0" layoutY="400.0" prefHeight="25.0" prefWidth="110.0" text="User ID :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="showUserIDLabel" layoutX="619.0" layoutY="400.0" prefHeight="25.0" prefWidth="178.0" style="-fx-border-color: black;">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="412.0" layoutY="450.0" prefHeight="25.0" prefWidth="110.0" text="Password :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="showPasswordLabel" layoutX="619.0" layoutY="452.0" prefHeight="25.0" prefWidth="178.0" style="-fx-border-color: black;">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="542.0" layoutY="505.0" mnemonicParsing="false" onAction="#addUserButtonOnClick" prefHeight="25.0" prefWidth="110.0" text="Add User" />
+      <Label layoutX="412.0" layoutY="245.0" prefHeight="25.0" prefWidth="152.0" text="Select Employee ID :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="employeeIDTextField" alignment="CENTER" layoutX="619.0" layoutY="245.0" onMouseClicked="#employeeIDtextFieldOnClick" prefHeight="25.0" prefWidth="178.0" text="Enter Employee ID here" />
+      <Label layoutX="412.0" layoutY="344.0" prefHeight="25.0" prefWidth="152.0" text="Employee Name :">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="showUserNameLabelForAdiing" layoutX="619.0" layoutY="347.0" prefHeight="25.0" prefWidth="178.0" style="-fx-border-color: black;">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button layoutX="1024.0" layoutY="858.0" mnemonicParsing="false" onAction="#logOutButtonOnClick" prefHeight="32.0" prefWidth="178.0" text="Log Out" />
+      <Button layoutX="542.0" layoutY="295.0" mnemonicParsing="false" onAction="#searchEmployeeButtonOnCLick" prefHeight="25.0" prefWidth="110.0" text="Search Employee" />
+      <TableView fx:id="tableView" layoutX="265.0" layoutY="625.0" prefHeight="200.0" prefWidth="698.0">
+        <columns>
+          <TableColumn fx:id="tableViewUserID" prefWidth="96.0" text="User ID" />
+          <TableColumn fx:id="tableViewEmpID" prefWidth="151.0" text="Employee ID" />
+            <TableColumn fx:id="tableViewUserName" prefWidth="140.0" text="User Name" />
+            <TableColumn fx:id="tableViewDept" prefWidth="170.0" text="Department" />
+            <TableColumn fx:id="tableViewUserType" prefWidth="140.0" text="User Type" />
+        </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutX="520.0" layoutY="559.0" prefHeight="41.0" prefWidth="188.0" text="Currently Added Users Data">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
